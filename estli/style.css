@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Font Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+:root {
+    --blue: hsl(215, 51%, 70%);
+    --cyan400: hsl(178, 100%, 50%);
+    --blueMain: hsl(217, 54%, 11%);
+    --blueCard: hsl(216, 50%, 16%);
+    --blueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--blueMain);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+article {
+    max-width: 320px;
+    background-color: var(--blueCard);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img {
+    background: url(../imagens/image-equilibrium.jpg) no-repeat center / cover;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+}
+
+article > h3 {
+    color: var(--white);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.contPrinc {
+    color: var(--blue);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.ethNumber {
+    color: var(--cyan400);
+    font-weight: 600;
+}
+
+img {
+    margin-right: 3px;
+}
+
+.ethRight {
+    color: var(--blue);
+}
+
+.line {
+    border-bottom: 1px solid var(--blueLine);
+}
+
+.avatar {
+    margin: 20px 0;
+    color: var(--blue); 
+    display: flex;
+}
+
+.icon {
+    
+}
+
+.name {
+    color: var(--white);
+    font-weight: 300;
+}
