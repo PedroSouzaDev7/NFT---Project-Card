@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue500: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --blue-mainBG: hsl(217, 54%, 11%);
+    --blue-cardBG: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    font-family: "outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-mainBG);
+}
+
+.card {
+    max-width: 375px;
+    background-color: var(--blue-cardBG);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.img-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--cyan);
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    opacity: 0;
+    text-replace: opacity .3s ease;
+}
+
+.img-card:hover .img-overlay {
+    opacity: 1;
+}
+
+.img-card > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card > h2 {
+    color: var(--white);
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.card > p {
+    color: var(--blue500);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth > p, .eth > .days {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eth > p {
+    color: var(--cyan);
+    font-size: 18px;
+}
+
+.eth > .days {
+    color: var(--blue500);
+    font-size: 18px;
+}
+
+.line-bottom {
+    border: 1px solid var(--blue-line);
+    margin: 20px 0;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar > img {
+    width: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.avatar > p {
+    color: var(--blue500);
+    font-size: 18px;
+}
+
+.avatar > p > span {
+    color: var(--white);
+}
