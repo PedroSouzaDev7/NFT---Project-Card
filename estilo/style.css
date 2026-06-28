@@ -22,6 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--blue-mainBG);
+    padding: 15px;
 }
 
 .card {
